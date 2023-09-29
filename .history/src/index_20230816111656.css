@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black;
+  }
+}
+
+.movie-desc,
+.movie-list,
+.movie-footer {
+  padding-left: 64px;
+}
+
+.swiper {
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.swiper-movie-list,
+.swiper-movie-top--rated,
+.swiper-movie--upcoming {
+  width: auto;
+}
+
+.modal_open {
+  transition: all linear 0.2s;
+}
+
+.show_header--down {
+  transform: translateY(-40px);
+  transition: all linear 0.2s;
+}
+
+.show_header--up {
+  /* transform: translateY(40px); */
+  transition: all linear 0.2s;
+}
+
+/* .movie_detail {
+  display: grid;
+  grid-area: "detail detail detail coming" "detail detail detail coming"
+    "detail detail detail coming" "detail detail detail coming"
+    "detail detail detail coming" "detail detail detail coming";
+} */
